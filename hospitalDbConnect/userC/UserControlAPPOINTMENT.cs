@@ -16,5 +16,10 @@ namespace hospitalDbConnect.userC
         {
             InitializeComponent();
         }
+
+        private void APPnumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
