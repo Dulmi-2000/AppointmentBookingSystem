@@ -16,5 +16,10 @@ namespace hospitalDbConnect.userC
         {
             InitializeComponent();
         }
+
+        private void Appsubmit_Click(object sender, EventArgs e)
+        {
+             
+        }
     }
 }
