@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using hospitalDbConnect.userC;
 
 namespace hospitalDbConnect
 {
@@ -28,43 +29,31 @@ namespace hospitalDbConnect
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String Name,Age;
+            
+        }
 
-            Name=textBox1.Text;
-            Age=textBox2.Text;
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
 
-            try
-            {
-                String querry = "INSERT INTO patientDb1(Name,age) VALUES('"+textBox1.Text+"','"+textBox2.Text+"')";
+        }
+        private void addUserControl(UserControl userControl)
+        {
+            userControl.Dock = DockStyle.Fill;
+            panelCon.Controls.Clear();
+            panelCon.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
+       
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            UserControlAPPOINTMENT uc = new UserControlAPPOINTMENT();
+            addUserControl(uc);
+        }
 
-                //String querry = "SELECT *FROM patientDb";
-                SqlDataAdapter sda=new SqlDataAdapter(querry,con);
-
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                
-                if(dt.Rows.Count > 0 )
-                {
-                    Name = textBox1.Text;
-                    Age = textBox2.Text;
-
-                    Form2 frm2 = new Form2();
-                    frm2.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Invalid");
-                }
-
-            }
-            catch {
-                MessageBox.Show("error");
-            }
-            finally
-            {
-                con.Close();
-            }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            UCregister uc = new UCregister();
+            addUserControl(uc);
         }
     }
 }
