@@ -46,8 +46,9 @@
             // 
             // APPdate
             // 
+            this.APPdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.APPdate.Location = new System.Drawing.Point(247, 191);
-            this.APPdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.APPdate.Margin = new System.Windows.Forms.Padding(2);
             this.APPdate.MaxDate = new System.DateTime(2100, 12, 31, 0, 0, 0, 0);
             this.APPdate.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.APPdate.Name = "APPdate";
@@ -57,7 +58,7 @@
             // APPcancel
             // 
             this.APPcancel.Location = new System.Drawing.Point(770, 442);
-            this.APPcancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.APPcancel.Margin = new System.Windows.Forms.Padding(2);
             this.APPcancel.Name = "APPcancel";
             this.APPcancel.Size = new System.Drawing.Size(56, 19);
             this.APPcancel.TabIndex = 27;
@@ -67,7 +68,7 @@
             // Appsubmit
             // 
             this.Appsubmit.Location = new System.Drawing.Point(653, 442);
-            this.Appsubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Appsubmit.Margin = new System.Windows.Forms.Padding(2);
             this.Appsubmit.Name = "Appsubmit";
             this.Appsubmit.Size = new System.Drawing.Size(56, 19);
             this.Appsubmit.TabIndex = 26;
@@ -146,7 +147,7 @@
             // APPpay
             // 
             this.APPpay.Location = new System.Drawing.Point(247, 350);
-            this.APPpay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.APPpay.Margin = new System.Windows.Forms.Padding(2);
             this.APPpay.Name = "APPpay";
             this.APPpay.Size = new System.Drawing.Size(151, 20);
             this.APPpay.TabIndex = 19;
@@ -154,7 +155,7 @@
             // APPname
             // 
             this.APPname.Location = new System.Drawing.Point(254, 74);
-            this.APPname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.APPname.Margin = new System.Windows.Forms.Padding(2);
             this.APPname.Name = "APPname";
             this.APPname.Size = new System.Drawing.Size(144, 20);
             this.APPname.TabIndex = 18;
@@ -162,7 +163,7 @@
             // APPnumber
             // 
             this.APPnumber.Location = new System.Drawing.Point(247, 292);
-            this.APPnumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.APPnumber.Margin = new System.Windows.Forms.Padding(2);
             this.APPnumber.Name = "APPnumber";
             this.APPnumber.Size = new System.Drawing.Size(151, 20);
             this.APPnumber.TabIndex = 17;
@@ -170,7 +171,7 @@
             // APPdoc
             // 
             this.APPdoc.Location = new System.Drawing.Point(247, 241);
-            this.APPdoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.APPdoc.Margin = new System.Windows.Forms.Padding(2);
             this.APPdoc.Name = "APPdoc";
             this.APPdoc.Size = new System.Drawing.Size(151, 20);
             this.APPdoc.TabIndex = 16;
@@ -178,7 +179,7 @@
             // APPrequestNO
             // 
             this.APPrequestNO.Location = new System.Drawing.Point(254, 132);
-            this.APPrequestNO.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.APPrequestNO.Margin = new System.Windows.Forms.Padding(2);
             this.APPrequestNO.Name = "APPrequestNO";
             this.APPrequestNO.Size = new System.Drawing.Size(144, 20);
             this.APPrequestNO.TabIndex = 15;
@@ -201,7 +202,7 @@
             this.Controls.Add(this.APPnumber);
             this.Controls.Add(this.APPdoc);
             this.Controls.Add(this.APPrequestNO);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserControlAPPOINTMENT";
             this.Size = new System.Drawing.Size(925, 535);
             this.ResumeLayout(false);
