@@ -44,30 +44,34 @@
             this.appointmentDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.maleRadioBttn = new System.Windows.Forms.RadioButton();
             this.femaleRadioBttn = new System.Windows.Forms.RadioButton();
+            this.patientRecordDataGridView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.patientRecordDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // registerBttn
             // 
-            this.registerBttn.Location = new System.Drawing.Point(82, 385);
+            this.registerBttn.Location = new System.Drawing.Point(63, 383);
             this.registerBttn.Name = "registerBttn";
             this.registerBttn.Size = new System.Drawing.Size(100, 23);
             this.registerBttn.TabIndex = 0;
             this.registerBttn.Text = "REGISTER";
             this.registerBttn.UseVisualStyleBackColor = true;
+            this.registerBttn.Click += new System.EventHandler(this.registerBttn_Click);
             // 
             // clearBttn
             // 
-            this.clearBttn.Location = new System.Drawing.Point(231, 385);
+            this.clearBttn.Location = new System.Drawing.Point(212, 383);
             this.clearBttn.Name = "clearBttn";
             this.clearBttn.Size = new System.Drawing.Size(94, 23);
             this.clearBttn.TabIndex = 1;
             this.clearBttn.Text = "CLEAR";
             this.clearBttn.UseVisualStyleBackColor = true;
+            this.clearBttn.Click += new System.EventHandler(this.clearBttn_Click);
             // 
             // patientNameLabel
             // 
             this.patientNameLabel.AutoSize = true;
-            this.patientNameLabel.Location = new System.Drawing.Point(39, 83);
+            this.patientNameLabel.Location = new System.Drawing.Point(20, 81);
             this.patientNameLabel.Name = "patientNameLabel";
             this.patientNameLabel.Size = new System.Drawing.Size(88, 16);
             this.patientNameLabel.TabIndex = 2;
@@ -76,7 +80,7 @@
             // patientAgeLabel
             // 
             this.patientAgeLabel.AutoSize = true;
-            this.patientAgeLabel.Location = new System.Drawing.Point(39, 134);
+            this.patientAgeLabel.Location = new System.Drawing.Point(20, 132);
             this.patientAgeLabel.Name = "patientAgeLabel";
             this.patientAgeLabel.Size = new System.Drawing.Size(76, 16);
             this.patientAgeLabel.TabIndex = 3;
@@ -85,7 +89,7 @@
             // appointmentDateLabel
             // 
             this.appointmentDateLabel.AutoSize = true;
-            this.appointmentDateLabel.Location = new System.Drawing.Point(39, 181);
+            this.appointmentDateLabel.Location = new System.Drawing.Point(20, 179);
             this.appointmentDateLabel.Name = "appointmentDateLabel";
             this.appointmentDateLabel.Size = new System.Drawing.Size(114, 16);
             this.appointmentDateLabel.TabIndex = 4;
@@ -94,7 +98,7 @@
             // contactNumberLabel
             // 
             this.contactNumberLabel.AutoSize = true;
-            this.contactNumberLabel.Location = new System.Drawing.Point(39, 227);
+            this.contactNumberLabel.Location = new System.Drawing.Point(20, 225);
             this.contactNumberLabel.Name = "contactNumberLabel";
             this.contactNumberLabel.Size = new System.Drawing.Size(103, 16);
             this.contactNumberLabel.TabIndex = 5;
@@ -112,7 +116,7 @@
             // doctorNameLabel
             // 
             this.doctorNameLabel.AutoSize = true;
-            this.doctorNameLabel.Location = new System.Drawing.Point(40, 323);
+            this.doctorNameLabel.Location = new System.Drawing.Point(21, 321);
             this.doctorNameLabel.Name = "doctorNameLabel";
             this.doctorNameLabel.Size = new System.Drawing.Size(87, 16);
             this.doctorNameLabel.TabIndex = 7;
@@ -129,44 +133,44 @@
             // 
             // patientNameTextBox
             // 
-            this.patientNameTextBox.Location = new System.Drawing.Point(209, 83);
+            this.patientNameTextBox.Location = new System.Drawing.Point(190, 81);
             this.patientNameTextBox.Name = "patientNameTextBox";
-            this.patientNameTextBox.Size = new System.Drawing.Size(200, 22);
+            this.patientNameTextBox.Size = new System.Drawing.Size(159, 22);
             this.patientNameTextBox.TabIndex = 10;
             // 
             // doctorNameTextBox
             // 
-            this.doctorNameTextBox.Location = new System.Drawing.Point(209, 323);
+            this.doctorNameTextBox.Location = new System.Drawing.Point(190, 321);
             this.doctorNameTextBox.Name = "doctorNameTextBox";
-            this.doctorNameTextBox.Size = new System.Drawing.Size(200, 22);
+            this.doctorNameTextBox.Size = new System.Drawing.Size(159, 22);
             this.doctorNameTextBox.TabIndex = 12;
             this.doctorNameTextBox.TextChanged += new System.EventHandler(this.doctorNameTextBox_TextChanged);
             // 
             // contactNumberTextBox
             // 
-            this.contactNumberTextBox.Location = new System.Drawing.Point(209, 221);
+            this.contactNumberTextBox.Location = new System.Drawing.Point(190, 219);
             this.contactNumberTextBox.Name = "contactNumberTextBox";
-            this.contactNumberTextBox.Size = new System.Drawing.Size(200, 22);
+            this.contactNumberTextBox.Size = new System.Drawing.Size(159, 22);
             this.contactNumberTextBox.TabIndex = 13;
             // 
             // patientAgeTextBox
             // 
-            this.patientAgeTextBox.Location = new System.Drawing.Point(209, 134);
+            this.patientAgeTextBox.Location = new System.Drawing.Point(190, 132);
             this.patientAgeTextBox.Name = "patientAgeTextBox";
-            this.patientAgeTextBox.Size = new System.Drawing.Size(200, 22);
+            this.patientAgeTextBox.Size = new System.Drawing.Size(159, 22);
             this.patientAgeTextBox.TabIndex = 14;
             // 
             // appointmentDateTimePicker
             // 
-            this.appointmentDateTimePicker.Location = new System.Drawing.Point(209, 181);
+            this.appointmentDateTimePicker.Location = new System.Drawing.Point(190, 179);
             this.appointmentDateTimePicker.Name = "appointmentDateTimePicker";
-            this.appointmentDateTimePicker.Size = new System.Drawing.Size(200, 22);
+            this.appointmentDateTimePicker.Size = new System.Drawing.Size(159, 22);
             this.appointmentDateTimePicker.TabIndex = 15;
             // 
             // maleRadioBttn
             // 
             this.maleRadioBttn.AutoSize = true;
-            this.maleRadioBttn.Location = new System.Drawing.Point(209, 275);
+            this.maleRadioBttn.Location = new System.Drawing.Point(190, 273);
             this.maleRadioBttn.Name = "maleRadioBttn";
             this.maleRadioBttn.Size = new System.Drawing.Size(58, 20);
             this.maleRadioBttn.TabIndex = 16;
@@ -177,7 +181,7 @@
             // femaleRadioBttn
             // 
             this.femaleRadioBttn.AutoSize = true;
-            this.femaleRadioBttn.Location = new System.Drawing.Point(329, 275);
+            this.femaleRadioBttn.Location = new System.Drawing.Point(275, 273);
             this.femaleRadioBttn.Name = "femaleRadioBttn";
             this.femaleRadioBttn.Size = new System.Drawing.Size(74, 20);
             this.femaleRadioBttn.TabIndex = 17;
@@ -185,10 +189,21 @@
             this.femaleRadioBttn.Text = "Female";
             this.femaleRadioBttn.UseVisualStyleBackColor = true;
             // 
+            // patientRecordDataGridView
+            // 
+            this.patientRecordDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.patientRecordDataGridView.Location = new System.Drawing.Point(368, 42);
+            this.patientRecordDataGridView.Name = "patientRecordDataGridView";
+            this.patientRecordDataGridView.RowHeadersWidth = 51;
+            this.patientRecordDataGridView.RowTemplate.Height = 24;
+            this.patientRecordDataGridView.Size = new System.Drawing.Size(864, 392);
+            this.patientRecordDataGridView.TabIndex = 18;
+            // 
             // UCpatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.patientRecordDataGridView);
             this.Controls.Add(this.femaleRadioBttn);
             this.Controls.Add(this.maleRadioBttn);
             this.Controls.Add(this.appointmentDateTimePicker);
@@ -207,6 +222,8 @@
             this.Controls.Add(this.registerBttn);
             this.Name = "UCpatient";
             this.Size = new System.Drawing.Size(1541, 945);
+            this.Load += new System.EventHandler(this.UCpatient_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.patientRecordDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +247,6 @@
         private System.Windows.Forms.DateTimePicker appointmentDateTimePicker;
         private System.Windows.Forms.RadioButton maleRadioBttn;
         private System.Windows.Forms.RadioButton femaleRadioBttn;
+        private System.Windows.Forms.DataGridView patientRecordDataGridView;
     }
 }
