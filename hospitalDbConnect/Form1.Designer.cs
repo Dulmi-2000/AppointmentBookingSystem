@@ -32,6 +32,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.patientBttn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,6 +45,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.patientBttn);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -71,6 +73,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // patientBttn
+            // 
+            this.patientBttn.Location = new System.Drawing.Point(57, 344);
+            this.patientBttn.Name = "patientBttn";
+            this.patientBttn.Size = new System.Drawing.Size(75, 23);
+            this.patientBttn.TabIndex = 6;
+            this.patientBttn.Text = "patient";
+            this.patientBttn.UseVisualStyleBackColor = true;
+            this.patientBttn.Click += new System.EventHandler(this.patientBttn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -93,6 +105,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button patientBttn;
     }
 }
 

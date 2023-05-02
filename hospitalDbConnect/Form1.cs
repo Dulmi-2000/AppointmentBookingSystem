@@ -55,5 +55,11 @@ namespace hospitalDbConnect
             UCregister uc = new UCregister();
             addUserControl(uc);
         }
+
+        private void patientBttn_Click(object sender, EventArgs e)
+        {
+            UCpatient uc = new UCpatient();
+            addUserControl(uc);
+        }
     }
 }
