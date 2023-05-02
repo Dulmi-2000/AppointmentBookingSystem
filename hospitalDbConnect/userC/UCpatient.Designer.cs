@@ -45,6 +45,8 @@
             this.maleRadioBttn = new System.Windows.Forms.RadioButton();
             this.femaleRadioBttn = new System.Windows.Forms.RadioButton();
             this.patientRecordDataGridView = new System.Windows.Forms.DataGridView();
+            this.updateBttn = new System.Windows.Forms.Button();
+            this.deleteBttn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.patientRecordDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -196,13 +198,38 @@
             this.patientRecordDataGridView.Name = "patientRecordDataGridView";
             this.patientRecordDataGridView.RowHeadersWidth = 51;
             this.patientRecordDataGridView.RowTemplate.Height = 24;
+            this.patientRecordDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.patientRecordDataGridView.Size = new System.Drawing.Size(864, 392);
             this.patientRecordDataGridView.TabIndex = 18;
+            this.patientRecordDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientRecordDataGridView_CellClick);
+            this.patientRecordDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.patientRecordDataGridView_CellContentClick);
+            // 
+            // updateBttn
+            // 
+            this.updateBttn.Location = new System.Drawing.Point(63, 475);
+            this.updateBttn.Name = "updateBttn";
+            this.updateBttn.Size = new System.Drawing.Size(75, 23);
+            this.updateBttn.TabIndex = 19;
+            this.updateBttn.Text = "Update";
+            this.updateBttn.UseVisualStyleBackColor = true;
+            this.updateBttn.Click += new System.EventHandler(this.updateBttn_Click);
+            // 
+            // deleteBttn
+            // 
+            this.deleteBttn.Location = new System.Drawing.Point(212, 475);
+            this.deleteBttn.Name = "deleteBttn";
+            this.deleteBttn.Size = new System.Drawing.Size(75, 23);
+            this.deleteBttn.TabIndex = 20;
+            this.deleteBttn.Text = "DELETE";
+            this.deleteBttn.UseVisualStyleBackColor = true;
+            this.deleteBttn.Click += new System.EventHandler(this.deleteBttn_Click);
             // 
             // UCpatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.deleteBttn);
+            this.Controls.Add(this.updateBttn);
             this.Controls.Add(this.patientRecordDataGridView);
             this.Controls.Add(this.femaleRadioBttn);
             this.Controls.Add(this.maleRadioBttn);
@@ -248,5 +275,7 @@
         private System.Windows.Forms.RadioButton maleRadioBttn;
         private System.Windows.Forms.RadioButton femaleRadioBttn;
         private System.Windows.Forms.DataGridView patientRecordDataGridView;
+        private System.Windows.Forms.Button updateBttn;
+        private System.Windows.Forms.Button deleteBttn;
     }
 }
