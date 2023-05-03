@@ -61,5 +61,10 @@ namespace hospitalDbConnect
             UCpatient uc = new UCpatient();
             addUserControl(uc);
         }
+
+        private void panelCon_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

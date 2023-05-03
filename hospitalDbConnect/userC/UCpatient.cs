@@ -197,12 +197,33 @@ namespace hospitalDbConnect
                 MessageBox.Show("patient is deleted from the system", "deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 GetPatientsRecord();
                 ClearFormControls();
+                Patient_id = 0;
             }
             else
             { 
                 MessageBox.Show("Please select a patient to delete", "Select?", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
          
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void patientNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void doctorNameLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
