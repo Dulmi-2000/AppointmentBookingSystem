@@ -33,8 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -52,20 +58,121 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="hospitalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hospitalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userC\ADDdoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\ADDdoc.Designer.cs">
+      <DependentUpon>ADDdoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\ADDrec.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\ADDrec.Designer.cs">
+      <DependentUpon>ADDrec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\adminlogin1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\adminlogin1.Designer.cs">
+      <DependentUpon>adminlogin1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\availableDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\availableDoc.Designer.cs">
+      <DependentUpon>availableDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\changeapp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\changeapp.Designer.cs">
+      <DependentUpon>changeapp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\ChangeappForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\ChangeappForm.Designer.cs">
+      <DependentUpon>ChangeappForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\dash.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\dash.Designer.cs">
+      <DependentUpon>dash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\DoctorPro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\DoctorPro.Designer.cs">
+      <DependentUpon>DoctorPro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\loginCreate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\loginCreate.Designer.cs">
+      <DependentUpon>loginCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\Patientregform.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\Patientregform.Designer.cs">
+      <DependentUpon>Patientregform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\receptionserch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\receptionserch.Designer.cs">
+      <DependentUpon>receptionserch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\receptlogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\receptlogin.Designer.cs">
+      <DependentUpon>receptlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\reciptionPRO.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\reciptionPRO.Designer.cs">
+      <DependentUpon>reciptionPRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\searchdoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\searchdoc.Designer.cs">
+      <DependentUpon>searchdoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userC\sms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userC\sms.Designer.cs">
+      <DependentUpon>sms.cs</DependentUpon>
+    </Compile>
     <Compile Include="userC\UCregister.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -81,6 +188,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -90,12 +203,72 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="userC\ADDdoc.resx">
+      <DependentUpon>ADDdoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\ADDrec.resx">
+      <DependentUpon>ADDrec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\adminlogin1.resx">
+      <DependentUpon>adminlogin1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\availableDoc.resx">
+      <DependentUpon>availableDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\changeapp.resx">
+      <DependentUpon>changeapp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\ChangeappForm.resx">
+      <DependentUpon>ChangeappForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\dash.resx">
+      <DependentUpon>dash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\DoctorPro.resx">
+      <DependentUpon>DoctorPro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\loginCreate.resx">
+      <DependentUpon>loginCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\Patientregform.resx">
+      <DependentUpon>Patientregform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\receptionserch.resx">
+      <DependentUpon>receptionserch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\receptlogin.resx">
+      <DependentUpon>receptlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\reciptionPRO.resx">
+      <DependentUpon>reciptionPRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\searchdoc.resx">
+      <DependentUpon>searchdoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userC\sms.resx">
+      <DependentUpon>sms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userC\UCregister.resx">
       <DependentUpon>UCregister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userC\UserControlAPPOINTMENT.resx">
       <DependentUpon>UserControlAPPOINTMENT.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="hospitalDataSet.xsc">
+      <DependentUpon>hospitalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hospitalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hospitalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hospitalDataSet.xss">
+      <DependentUpon>hospitalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
